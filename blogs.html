@@ -12,46 +12,97 @@
   <body>
     <header>
       <div class="container-hero">
-        <div class="container hero">
-          <div class="container-logo">
+          <div class="container hero">
+              <div class="container-logo">
+                  <h1 class="logo" >Eres la protagonista de tu propia pasarela</h1>                    
+              </div>
           </div>
-        </div>
+             </div>
+            
+             <div class="container-logo2">
+
+              <div class="customer-support">
+                  <form class="search-form">
+                      <input type="search" placeholder="Buscar...">
+                      <button class="btn-search">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                  </form>
+
+              </div>                
+              <h1 class="logo" >Vanity</h1> 
+              <div class="container-user">
+                  <i class="fa-solid fa-user"></i>
+                  <div class="content-shopping-cart">
+                 
+                  <div class="container-icon">
+                      <div class="container-cart-icon">
+                          <i class="fa-solid fa-basket-shopping"></i>
+                          </div>
+                          <div class="count-products">
+                              <span id="contador-productos">0</span>
+                          </div>
+                      </div> 
+                      <div class="container-cart-products hidden-cart">
+                          <div class="row-product hidden">
+                              <div class="cart-product">
+                                  <div class="info-cart-product">
+                                      <span class="cantidad-producto-carrito">1</span>
+                                      <p class="titulo-producto-carrito">Zapatos Nike</p>
+                                      <p class="precio-producto-carrito">$80</p>
+                                      <span class="descuento">$100</span>
+                                  </div>
+                                  <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="1.5"
+                                      stroke="currentColor"
+                                      class="icon-close"
+                                  >
+                                      <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          d="M6 18L18 6M6 6l12 12"
+                                      />
+                                  </svg>
+                              </div>
+                          </div>
+                          <div class="cart-total hidden">
+                              <h3>Total:</h3>
+                              <span class="total-pagar">$200</span>
+                          </div>
+                          <p class="cart-empty">El carrito está vacío</p>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
       </div>
 
-      <div class="container-logo2">
-        <div class="customer-support">
-          <form class="search-form">
-            <input type="search" placeholder="Buscar..." />
-            <button class="btn-search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-        </div>
-        <h1 class="logo">Vanity</h1>
-        <div class="container-user">
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-basket-shopping"></i>
-          <div class="content-shopping-cart"></div>
-        </div>
-      </div>
-
+           
       <div class="container-navbar">
-        <nav class="navbar1 container">
-          <i class="fa-solid fa-bars"></i>
+
+          <nav class="navbar1 container">
+              <div class="menu-toggle">
+                  <i class="fa-solid fa-x"></i>          
+                   <i class="fa-solid fa-bars"></i>
+          </div>
+          
           <ul class="menu">
-            <li><a href="Lali.index.html">Inicio</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="#">Nuevo</a></li>
-            <li><a href="#producto">Productos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="blogs.html">Blog</a></li>
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Opiniones</a></li>
+              <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Quienes somos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Nuevo</a></li>
+              <li class="nav-item"><a class="nav-link" href="#producto">Productos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+              <li class="nav-item"><a class="nav-link" href="blogs.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Opiniones</a></li>                                               
           </ul>
-        </nav>
-      </div>
-    </header>
+      </nav>
+      </div>    
+  </header>
 
     <div class="separacion"></div>
     <section class="gallery">
@@ -242,5 +293,19 @@
       src="https://kit.fontawesome.com/b3e5ab7223.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const selectElement = function(element) {
+return document.querySelector(element);
+}
+
+
+let menuToggle = selectElement('.menu-toggle');
+let body = selectElement('body');
+
+menuToggle.addEventListener('click', function(){
+body.classList.toggle('open');
+})
+
+</script>
   </body>
 </html>

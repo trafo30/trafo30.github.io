@@ -88,9 +88,9 @@
                     <i class="fa-solid fa-x"></i>          
                      <i class="fa-solid fa-bars"></i>
             </div>
-
+            
             <ul class="menu">
-                <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Quienes somos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Nuevo</a></li>
                 <li class="nav-item"><a class="nav-link" href="#producto">Productos</a></li>
@@ -358,7 +358,18 @@
     <script src="https://kit.fontawesome.com/b3e5ab7223.js" crossorigin="anonymous"></script>
     <script src="carrito.js"></script>
     <script>
-        
+                    const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
     </script>
 
 </body>
