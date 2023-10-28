@@ -266,6 +266,7 @@ html {
 /* *************Navbar************ */
 
 
+
 .container-navbar {
     background-color: var(--primary-color);
 }
@@ -280,7 +281,10 @@ html {
 
 .navbar1 .fa-bars{
     display: none;
+}
 
+.navbar1 .fa-x{
+    display: none;
 }
 
 .menu{
