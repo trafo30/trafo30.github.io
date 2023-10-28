@@ -727,6 +727,10 @@ button{
     text-align: center;
 }
 
+.descuento{
+    text-decoration: line-through;
+}
+
 .content-card-product .precio-descuento span{
     font-size: 1.5rem;
     font-weight: 400;
