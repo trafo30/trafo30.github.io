@@ -836,7 +836,7 @@ button{
 }
 
 .youtube{
-    background-color: #c4302b;
+    background-color: rgb(91, 211, 67);
 }
 
 .instagram{
@@ -1108,7 +1108,7 @@ button{
     .contact-info ul,
     .information ul,
     .my-account ul{
-        display: none;
+        display: flex;
     }
 
     .contact-info{
